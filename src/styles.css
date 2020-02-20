@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.search-input {
+  width: 50%;
+  margin: auto;
+}
+ul {
+  width: 50%;
+  margin: 20px auto 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  text-align: left;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+li:last-child {
+  border-bottom: 1px solid #ddd;
+}
