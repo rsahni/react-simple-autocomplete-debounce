@@ -28,7 +28,6 @@ export default function App() {
         return resp.json();
       })
       .then(json => {
-        console.log(json);
         if (json.message !== "Not Found") {
           setCountries(json);
         }
@@ -41,7 +40,7 @@ export default function App() {
   const handleKeyPress = event => {
     var value = event.target.value;
     console.log(value);
-    if (value !== "") {
+    if (value !== "" && value.length >= 2) {
       debounceCall(value);
     } else {
       setCountries([]);
